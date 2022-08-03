@@ -9,9 +9,9 @@
 23432 -> да*/
 
 Console.WriteLine("Введите пятизначное число -> ");
-string num = Console.ReadLine();
+string? num = Console.ReadLine();
 
-if (num[0] == num[4] || num[1] == num[3])
+if (num?[0] == num?[4] || num?[1] == num?[3])
 {
     System.Console.WriteLine("Ваше число полидром -> " + num);
 }
@@ -20,7 +20,7 @@ else
     System.Console.WriteLine("Ваше число не полидром -> " + num);
 }
 
-if (num.Length > 5)
+if (num?.Length > 5)
 {
     System.Console.WriteLine("Введите правельно число, ваше число не пятизначное");
 }
