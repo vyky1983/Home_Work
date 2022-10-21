@@ -8,7 +8,7 @@ Clear();
 1, -7, 567, 89, 223-> 3*/
 
 Write("Введите числа через запятую: ");
-int[] numbers = StringToNum(ReadLine());
+int[] numbers = StringToNum(ReadLine()!);
 PrintArray(numbers);
 int sum = 0;
 for (int i = 0; i < numbers.Length; i++)
